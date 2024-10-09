@@ -1,0 +1,15 @@
+.wallet {
+  padding: 20px;
+}
+
+.withdraw-btn {
+  padding: 10px 20px;
+  background-color: #00ffaa;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.withdraw-btn:hover {
+  background-color: #00cc88;
+}

@@ -1,0 +1,13 @@
+App.css
+
+/* Ensure the page content is pushed down when navbar is fixed */
+body {
+  padding-top: 60px; /* Same as navbar height */
+  margin: 0; /* Reset body margin */
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* You can add global styles for the app here */
+}

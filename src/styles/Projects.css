@@ -1,0 +1,103 @@
+.projects-container {
+  position: relative;
+  padding: 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  padding: auto;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.no-projects {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.upload-button {
+  position: fixed;
+  bottom: 20px; /* Places the button at the bottom */
+  right: 20px; /* Aligns the button to the right */
+  width: 60px; /* Width of the circle */
+  height: 60px; /* Height of the circle */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Makes the button circular */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Adjusts icon size */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for a floating effect */
+  animation: bounce 2s infinite; /* Adds the bouncing animation */
+  transition: transform 0.3s ease-in-out;
+}
+
+.upload-button:hover {
+  transform: scale(1.1);
+  background-color: #45a049; /* Makes the button grow slightly on hover */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+.project-form-container {
+  margin-top: 60px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,25 @@
+.feedback-form {
+  padding: 60px;
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #0088cc;
+}

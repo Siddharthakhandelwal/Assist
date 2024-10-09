@@ -1,0 +1,23 @@
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5em;
+}
+
+.card p {
+  font-size: 1.2em;
+  color: #555;
+}

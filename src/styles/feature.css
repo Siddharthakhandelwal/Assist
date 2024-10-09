@@ -1,0 +1,31 @@
+
+
+.three-column-section {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    margin: 50px 100px; /* Add padding and space around the div */
+    gap: 20px; /* Space between the columns */
+  }
+  
+  .column {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the columns */
+    transition: transform 0.3s ease;
+  }
+  
+  .column:hover {
+    transform: translateY(-10px); /* Add a hover effect for interactivity */
+  }
+  
+  .column h3 {
+    margin-bottom: 10px;
+  }
+  
+  .column p {
+    font-size: 16px;
+    color: #333;
+  }
+  

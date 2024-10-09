@@ -1,0 +1,15 @@
+/* ImageCarousel.css */
+
+.carousel-container {
+    margin-top: 70px; /* Adjust margin to keep distance from the navbar */
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    border-radius: 10px; /* Add rounded corners to the images */
+  }
+  

@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+/* Initial Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width initially */
+    height: 60px;
+    background: linear-gradient(90deg, white, blue);
+    background-size: 200% 200%; /* Allows the background to move */
+    border-top-left-radius: 0px; /* No rounded corners initially */
+    border-top-right-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: gradient-scroll 10s ease infinite; /* Slowed down gradient */
+    transition: all 0.3s ease-in-out; /* Smooth transition on scroll */
+  }
+  
+  /* Navbar Styles when Scrolling */
+  .navbar.shrink {
+    width: 90%; /* Shrink to 90% of the screen */
+    top: 10px; /* Add padding from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the navbar */
+    height: 50px; /* Slightly smaller height */
+    border-top-left-radius: 20px; /* Rounded corners */
+    border-top-right-radius: 20px;
+    padding: 5px 20px; /* Adjust padding */
+  }
+  
+  /* Links inside the Navbar */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .navbar-brand a {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-nav li {
+    margin-left: 20px;
+   
+  }
+  
+  .btn {
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: lightblue;
+  }
+  
+  /* Gradient scroll animation */
+  @keyframes gradient-scroll {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  

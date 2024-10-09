@@ -1,0 +1,25 @@
+.history {
+  position: relative;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  padding: auto;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
