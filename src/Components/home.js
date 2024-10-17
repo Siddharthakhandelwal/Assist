@@ -3,7 +3,7 @@ import Navbar from "./Home_Navbar";
 import Dashboard from "./Dashboard";
 import Projects from "./Projects";
 import History from "./History";
-import Wallet from "./Wallet";
+
 import FeedbackForm from "./FeedbackForm";
 import "../styles/Home.css";
 import { UserContext } from "./UserContext"; // Import the UserContext
@@ -19,8 +19,7 @@ function Home() {
         return <Projects />;
       case "history":
         return <History />;
-      case "wallet":
-        return <Wallet />;
+
       case "feedback":
         return <FeedbackForm />;
       default:
