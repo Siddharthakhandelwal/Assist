@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import supabase from "./supabaseClient";
-import { UserContext } from "./UserContext";
+// import supabase from "./supabaseClient";
+// import { UserContext } from "./UserContext";
 import "../styles/Projects.css"; // Ensure you have necessary styles here
 
 const Project = () => {
@@ -13,44 +13,44 @@ const Project = () => {
   const [error, setError] = useState(null);
   const [projects, setProjects] = useState([]);
 
-  const { user } = useContext(UserContext);
+  // const { user } = useContext(UserContext);
   const uploaderEmail = user?.email;
 
   const toggleForm = () => {
     setShowForm((prevShowForm) => !prevShowForm); // Toggle form visibility
   };
 
-  const fetchProjects = async () => {
-    const { data, error } = await supabase
-      .from("projects")
-      .select("id, project_details, price, deadline, status, taker_email")
-      .eq("status", "open")
-      .order("deadline", { ascending: true });
+  // const fetchProjects = async () => {
+  //   const { data, error } = await supabase
+  //     .from("projects")
+  //     .select("id, project_details, price, deadline, status, taker_email")
+  //     .eq("status", "open")
+  //     .order("deadline", { ascending: true });
 
-    if (error) {
-      console.error("Error fetching projects:", error);
-    } else {
-      setProjects(data);
-    }
-  };
+  //   if (error) {
+  //     console.error("Error fetching projects:", error);
+  //   } else {
+  //     setProjects(data);
+  //   }
+  // };
 
-  const takeProject = async (projectId) => {
-    if (!user?.email) {
-      console.error("No user is logged in.");
-      return;
-    }
+  // const takeProject = async (projectId) => {
+  //   if (!user?.email) {
+  //     console.error("No user is logged in.");
+  //     return;
+  //   }
 
-    const { error } = await supabase
-      .from("projects")
-      .update({ status: "taken", taker_email: user.email })
-      .eq("id", projectId);
+  //   const { error } = await supabase
+  //     .from("projects")
+  //     .update({ status: "taken", taker_email: user.email })
+  //     .eq("id", projectId);
 
-    if (error) {
-      console.error("Error taking the project:", error);
-    } else {
-      fetchProjects();
-    }
-  };
+  //   if (error) {
+  //     console.error("Error taking the project:", error);
+  //   } else {
+  //     fetchProjects();
+  //   }
+  // };
 
   // Define handleFormSubmit to handle the project upload form
   const handleFormSubmit = async (e) => {
